@@ -27,7 +27,7 @@ func main() {
 	// Just need the A record.
 	_, err = resp.Add(dnssd.Service{
 		Domain: "local",
-		Host:   "gokrazy",
+		Host:   "rpi-zero-0",
 		Ifaces: []string{"eth0", "wlan0"},
 	})
 	if err != nil {
